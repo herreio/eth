@@ -72,15 +72,9 @@ function initContent(xmlFeed){
     }
     var entries = feed.getElementsByTagName("entry").length;
     for (i = 0; i < entries; ++i) {
-
         var entry = feed.getElementsByTagName('entry').item(i);
-
         var title = entry.getElementsByTagName('title').item(0).firstChild.data;
-        /*
-        if (title.length > 79) {
-            title = title.substr(0,77) + "...";
-        }
-        */
+        /*  if (title.length > 79) title = title.substr(0,77) + "..."; */
         var creator = entry.getElementsByTagName('dc:creator').item(0).innerHTML;
         var published = entry.getElementsByTagName('published').item(0).innerHTML;
         var date = new Date(published);
