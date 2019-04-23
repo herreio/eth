@@ -86,7 +86,7 @@ function initContent(xmlFeed){
         var link = entry.getElementsByTagName('link').item(0).getAttribute("href");
         var title = entry.getElementsByTagName('title').item(0).firstChild.data;
         /*  if (title.length > 79) title = title.substr(0,77) + "..."; */
-        content += '<a target="_blank" href="' + link +'"><i>' + title + '</i></a>' + empty;
+        content += '<a target="_blank" href="' + link +'">' + title + '</a>' + empty;
         var creator = entry.getElementsByTagName('dc:creator').item(0).innerHTML;
         content += creator + empty + empty;
 
