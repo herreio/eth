@@ -52,6 +52,7 @@ function createHome(){
     let a = createNode('a','eth');
     a.innerHTML = 'MPI for Social Anthropology';
     a.href = 'https://www.eth.mpg.de/';
+    a.target = '_blank'
     pre.appendChild(a);
     pre.innerHTML += '\n\n';
     root.appendChild(pre);
