@@ -8,7 +8,7 @@ const search = 'https://pure.mpg.de/rest/feed/search?q=';
     QUERY
 */
 
-var query = '{"bool":{"must":[{"term":{"publicState":{"value":"RELEASED","boost":1.0}}},{"term":{"versionState":{"value":"RELEASED","boost":1.0}}},{"bool":{"should":[{"term":{"modifier.objectId":{"value":"user_2488736","boost":1.0}}}],"adjust_pure_negative":true,"boost":1.0}}],"adjust_pure_negative":true,"boost":1.0}}';
+var query = '{"bool":{"must":[{"term":{"publicState":{"value":"RELEASED"}}},{"term":{"versionState":{"value":"RELEASED"}}},{"bool":{"should":[{"term":{"modifier.objectId":{"value":"user_2488736"}}}]}}]}}';
 
 
 /*
